@@ -3,7 +3,7 @@
 	overflow-x: hidden;
 }
 
-main#main h1#title{
+#main #title{
 	font-size: 1.7em;
 	width: 100%;
 	padding-left: 10%;
@@ -11,13 +11,13 @@ main#main h1#title{
 	font-family: arial;
 }
 
-main#main p{
+#main p{
 	width: 100%;
 	font-size: 1.2em;
 	padding-left: 8%;
 }
 
-main#main, footer{
+#main, footer{
 	background-color: #eee;
 	width: 94%;
 	margin: 3%;
@@ -25,11 +25,12 @@ main#main, footer{
 }
 
 div:first-of-type{
-	width: 30%;
+	width: 28%;
 	float: right;
+	margin-right: 2%;
 }
 
-div:first-of-type > div#img-div{
+div:first-of-type > #img-div{
 	width: 80%;
 	height: auto;
 	margin: 1em 10%;
@@ -37,11 +38,11 @@ div:first-of-type > div#img-div{
 	0% of margin for both side: left and right */ 
 }
 
-div:first-of-type > div#img-div > img#image{
+div:first-of-type > #img-div > #image{
 	width: 100%;
 }
 
-div:first-of-type > p#img-caption{
+div:first-of-type > #img-caption{
 	text-align: center;
 	margin: .2em 0;
 	font-family: arial;
@@ -49,41 +50,43 @@ div:first-of-type > p#img-caption{
 	font-size: .75em;
 }
 
-div#tribute-info{
+#tribute-info{
 	width: 65%;
 	float: left;
 	margin-left: 5%;
 }
 
-div#tribute-info > p{
+#tribute-info > p{
 	text-align: justify;
 	line-height: 1.4em;
 }
 
-div#tribute-info > a#tribute-link, footer > p > a{
+#tribute-info > #tribute-link, footer > p > a{
 	text-decoration: none;
 }
 
-div#tribute-info > a#tribute-link:hover, footer > p > a:hover{
+#tribute-info > #tribute-link:hover, footer > p > a:hover{
 	text-decoration: underline;
 }
 
-div#popsng{
+#popsng{
 	margin-left: 5%;
+	margin-right: 5%;
+	width: 90%;
 }
 
-div#popsng > h2{
+#popsng > h2{
 	font-family: arial;
 	text-transform: uppercase;
 }
 
-div#popsng > ul{
+#popsng > ul{
 	list-style-type: circle;
 	list-style-position: inside;
 	padding-left: .7em;
 }
 
-div#popsng > ul > li{
+#popsng > ul > li{
 	line-height: 2em;
 }
 
@@ -98,11 +101,11 @@ footer > p{
 /* Responsive */
 
 @media (max-width: 1024px){
-	div:first-of-type > div#img-div{
+	div:first-of-type > #img-div{
 		margin: 2em 10% 0 10%;
 	}
 
-	div:first-of-type > p#img-caption{
+	div:first-of-type > #img-caption{
 		font-size: .6em;
 		width: 80%;
 		margin: 1em 10%;
