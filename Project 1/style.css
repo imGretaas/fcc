@@ -1,0 +1,110 @@
+*{
+	width: 100%;
+	overflow-x: hidden;
+}
+
+main#main h1#title{
+	font-size: 1.7em;
+	width: 100%;
+	padding-left: 10%;
+	text-transform: uppercase;
+	font-family: arial;
+}
+
+main#main p{
+	width: 100%;
+	font-size: 1.2em;
+	padding-left: 8%;
+}
+
+main#main, footer{
+	background-color: #eee;
+	width: 94%;
+	margin: 3%;
+	padding: .5em 0;
+}
+
+div:first-of-type{
+	width: 30%;
+	float: right;
+}
+
+div:first-of-type > div#img-div{
+	width: 80%;
+	height: auto;
+	margin: 1em 10%;
+	/* I centered the image using width and margin, 80% of width and 1
+	0% of margin for both side: left and right */ 
+}
+
+div:first-of-type > div#img-div > img#image{
+	width: 100%;
+}
+
+div:first-of-type > p#img-caption{
+	text-align: center;
+	margin: .2em 0;
+	font-family: arial;
+	text-transform: uppercase;
+	font-size: .75em;
+}
+
+div#tribute-info{
+	width: 65%;
+	float: left;
+	margin-left: 5%;
+}
+
+div#tribute-info > p{
+	text-align: justify;
+	line-height: 1.4em;
+}
+
+div#tribute-info > a#tribute-link, footer > p > a{
+	text-decoration: none;
+}
+
+div#tribute-info > a#tribute-link:hover, footer > p > a:hover{
+	text-decoration: underline;
+}
+
+div#popsng{
+	margin-left: 5%;
+}
+
+div#popsng > h2{
+	font-family: arial;
+	text-transform: uppercase;
+}
+
+div#popsng > ul{
+	list-style-type: circle;
+	list-style-position: inside;
+	padding-left: .7em;
+}
+
+div#popsng > ul > li{
+	line-height: 2em;
+}
+
+footer{
+	text-align: center;
+}
+
+footer > p{
+	font-style: italic;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px){
+	div:first-of-type > div#img-div{
+		margin: 2em 10% 0 10%;
+	}
+
+	div:first-of-type > p#img-caption{
+		font-size: .6em;
+		width: 80%;
+		margin: 1em 10%;
+	}
+}
