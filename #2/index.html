@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+</head>
+
+<body>
+<header>
+	<h1 id="title">Ariana Grande World Tour 8K</h1>
+	<p id="description">Find your ticket for the next concert in town</p>
+</header>
+
+<form id="survey-form">
+	<div class="form-group">
+		<label id="name-label" for="name">Name</label>
+		<input id="name" name="name" type="text" placeholder="Enter your name" required="">
+	</div>
+	<div class="form-group">
+		<label id="email-label" for="email">Email</label>
+		<input id="email" name="email" type="email" pattern=".+@+.+.+." placeholder="Enter your email" required="">
+	</div>
+	<div class="form-group">
+		<label id="number-label" for="number">Age</label>
+		<input id="number" name="age" type="number" placeholder="Age" min="18" max="110" required="">
+	</div>
+	<div class="form-group">
+		<p>Select your seat</p>
+		<select id="dropdown" class="form-control" name="seats" required="">
+			<option disabled="" selected="" value="">Select your seat</option>
+			<option value"stage">Under the stage ($ 275)</option>
+			<option value="first">First Ring ($ 200)</option>
+			<option value="second">Second Ring ($ 100)</option>
+			<option value="third">Third Ring ($ 33)</option>
+		</select>
+	</div>
+	<div class="form-group">
+		<p>Have you got a discout?</p>
+		<label>
+			<input class="input-checkbox" name="prefer" value="student" type="radio">Student</input>
+		</label>
+		<label>
+			<input class="input-checkbox" name="prefer" value="walmart" type="radio">Walmart Promo Code</input>
+		</label>
+		<label>
+			<input class="input-checkbox" name="prefer" value="pack" type="radio">4 Pack Tickets</input>
+		</label>
+		<label>
+			<input class="input-checkbox" name="prefer" value="reserved" type="radio">Reserved Seating</input>
+		</label>
+		<label id="lastlab">
+			<input class="input-checkbox" name="prefer" value="other" type="radio">Other</input>
+		</label>
+		<p id="extra">If you have any type of discount, it will be checked at the entrance of the Theatre/Arena. Do not forget it at home, otherwise you will pay the full ticket price.</p>
+	</div>
+	<div class="form-group">
+		<p>Additional Informations</p>
+		<textarea id="note" name="addinfo" placeholder="Enter your discount number here and/or other informations..." maxlength="400"></textarea>
+	</div>
+	<div class="form-group">
+		<button id="submit" type="submit">Submit</button>
+	</div>
+</form>
+
+<footer></footer>
+</body>
+</html>
