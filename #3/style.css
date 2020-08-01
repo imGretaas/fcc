@@ -1,0 +1,348 @@
+*{
+	width: 100%;
+	overflow-x: hidden;
+	font-family: roboto;
+	color: #626e72;
+	margin-left: 0;
+}
+
+a{
+	color: violet;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+a:visited{
+	color: navy;
+}
+
+#header{
+	width: 100%;
+}
+
+#header-img{
+	width: 16%;
+	padding-left: 1%;
+	margin-top: .3em;
+}
+
+#header-img2{
+	display: none;
+}
+
+.box > p{
+	line-height: 1.5em;
+}
+
+#nav-bar{
+	width: 83%;
+	list-style-type: none;
+	float: right;
+}
+
+#nav-bar > ul{
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+}
+
+#nav-bar > ul > li{
+	float: right;
+	display: block;
+	width: 10%;
+	padding-left: 2.5%;
+}
+
+#nav-bar > ul > li > a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#nav-bar > ul > li > a:hover{
+	text-decoration: underline;
+}
+
+h1{
+	font-size: 1.6em;
+	text-align: center;
+	font-family: Nunito;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: 1.3em;
+	text-align: center;
+	font-family: Nunito;
+	text-transform: uppercase;
+}
+
+/* Fade in effect */
+
+#franz, #features, #movie, #prices, #contact{
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* * * * * * * * */
+
+#features, #franz, #movie, #prices{
+	width: 90%;
+	margin: 1em 5% 1.5em;
+}
+
+#movie > h1{
+	margin-bottom: 1.3em;
+}
+
+#franz > ul{
+	list-style-type: revert;
+	list-style-position: inside;
+}
+
+#franz > p{
+	line-height: 1.5em;
+}
+
+#features > .box{
+	float: left;
+	width: 17%;
+	margin: 2em 2%;
+	text-align: center;
+	box-shadow: 0 0 1.5em #ccc;
+	padding: 0.5em 2%;
+	border-radius: 0.5em;
+}
+
+#features > .box > .boximg{
+	width: 30%;
+	margin: 1em auto;
+	display: block;
+}
+
+.pricebox{
+	float: left;
+	width: 17%;
+	margin: 2em 2%;
+	box-shadow: 0 0 1.5em #ccc;
+	padding: 0.5em 2%;
+	border-radius: 0.5em;
+	text-align: center;
+}
+
+.pricebox > p:first-of-type{
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.pricebox ul > li{
+	line-height: 1.5em;
+}
+
+.send{
+	border:none;
+	height: 3em;
+	text-transform: uppercase;
+	margin: 1em 0;
+	border-radius: .5em;
+	cursor: pointer;
+	font-size: .86em;
+	font-weight: bold;
+}
+
+#form > label{
+	width: 100%;
+	display: block;
+}
+
+#form > input, #form > button{
+	width: 40%;
+	margin: .7em auto;
+	display: block;
+} 
+
+#form > button{
+	border:none;
+	height: 2em;
+	text-transform: uppercase;
+	margin: 1em auto !important;
+	cursor: pointer;
+	font-size: .86em;
+	font-weight: bold;
+	background-color: #ccc;
+}
+
+.send:hover, #form > button:hover{
+	text-decoration: underline;
+	background-color: red; 
+  	background-image: linear-gradient(to bottom right, orange, violet); 
+  	color: navy;
+}
+
+.pricebox > ul{
+	padding: 0;
+	list-style-type: revert;
+	list-style-position: inside;
+	text-align: left;
+	margin: .5em 3%;
+}
+
+#contact{
+	width: 90%;
+	margin: 1em 5%;
+	text-align: center;
+	background-color: rgb(240,240,240);
+}
+
+#contact > h2{
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+footer{
+	text-align: center;
+	width: 90%;
+	margin: 1em 5% 0;
+}
+
+@media only screen and (max-width: 1024px){
+	#franz, #features, #movie, #prices, #contact{
+    animation: none;
+    -moz-animation: none;
+    -webkit-animation: none;
+    -o-animation: none;
+}
+
+.send:hover, #form > button:hover, a:hover, #nav-bar > ul > li > a:hover{
+	text-decoration: none;
+}
+
+
+.send, #form > button{
+	background-color: red; 
+  	background-image: linear-gradient(to bottom right, orange, violet); 
+  	color: navy;
+}
+
+} 
+
+@media only screen and (max-width: 900px){
+	#header-img{
+		width: 28%;
+		padding-left: 1%;
+	}
+
+	#nav-bar{
+		width: 71%;
+		margin-top: .7em;
+	}
+
+	#nav-bar > ul{
+		margin-top: .1em;
+	}
+
+	#nav-bar > ul > li{
+		width: 20%;
+		padding-left: 2.5%;
+	}
+
+
+	#features > .box, .pricebox{
+		width: 40.5%;
+		box-shadow: 0 0 1em #ccc;
+		margin: 2em 2.5%;
+	}
+
+	#features > .box:first-of-type, #features > .box:nth-of-type(3), .pricebox:first-of-type, .pricebox:nth-of-type(3){
+		margin-left: 3%;
+	}
+
+	.pricebox:first-of-type, .pricebox:nth-of-type(2){
+		height: 24em;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	#header-img{
+		width: 28%;
+		padding-left: 1%;
+	}
+
+	#nav-bar{
+		width: 71%;
+	}
+
+	.pricebox:first-of-type, .pricebox:nth-of-type(2){
+		height: auto;
+	}
+
+	.pricebox, .box{
+		height: auto;
+		width: 86% !important;
+		margin: 1em 4% !important;
+		padding: 0.5em 3% !important;
+	}	
+
+	#nav-bar{
+		width: 100%;
+		margin-top: 0;
+	}
+
+	#nav-bar > ul{
+		text-align: center
+	}
+
+	#nav-bar > ul > li{
+		width: 25%;
+		float: right;
+		padding: 0;
+	}
+
+	#header-img{
+		display: none;
+	}
+
+	#header-img2{
+		width: 50%;
+		margin: 3.5em auto 0;
+		display: block;
+	}
+}
