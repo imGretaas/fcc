@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+
+<div id="navbar">
+	<header>
+		Hypertext Markup Language
+	</header>
+	<ul>
+		<li><a href="#intro" class="nav-link">Intro</a></li>
+		<li><a href="#html_versions" class="nav-link">HTML Versions</a></li>
+		<li><a href="#markup" class="nav-link">Markup</a></li>
+		<li><a href="#block_and_inline_elements" class="nav-link">Block and Inline Elements</a></li>
+		<li><a href="#hello_world" class="nav-link">Hello World</a></li>
+		<li><a href="#styling" class="nav-link">Styling</a></li>
+		<li><a href="#reference" class="nav-link">Reference</a></li>
+	</ul>
+</div>
+
+<main id="main-doc">
+	<section id="intro" class="main-section">
+		<header>Intro</header>
+		<article>
+			<p><strong>Hypertext Markup Language (HTML)</strong> is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.
+			</p>
+			<p>Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the docoument.</p>
+			<p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such as interactive forms may be embedded into the render page. <br> HTML provides a means o creeate structured documents by denoting structural semantics for text such as headings, paragraph, lists, links, quotes and other elements.
+			</p>
+			<p>HTML elements are delineated by tags, written using <em>angle brackets</em>.<br>Tags such as <span class="code">&lt;img&gt;</span> and <span class="code">&lt;input&gt;</span> directly introduce content into the page. Other tags such as <span class="code">&lt;p&gt;</span> surrounded and provide informatio about document text and may include other tags as sub-elements.<br>Browsers do not display the HTML tags, but use them to interpret the content of the page.</p>
+			<p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. Inclusion of CSS degines the look and layout of content.<br><a href="https://www.w3.org/">The World Wide Web Consortium (W3C)</a>, former maintainer of the HTML and current maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since '97.
+			</p>
+		</article>
+	</section>
+	<section id="html_versions" class="main-section">
+		<header>HTML Versions</header>
+		<article>
+			<p>There are many versions of HTML:</p>
+			<ul>
+				<li>HTML 2</li>
+				<li>HTML 3</li>
+				<li>HTML 4</li>
+				<li>HTML 5</li>
+			</ul>
+			<p>First version of HTML (HTML 2) was published in November 1995.<br> The second one was published as a W3C Recommendation in January 1997. It was the first version develiped and trandarized exclusively by the W3C, as the IETF (Internet Engineering Task Force) had closed its HTML Working Group on September '96.
+			</p>
+			<p>
+				HTML 4 was published as a W3C Recommendation. IT offers three variations:
+			</p>
+			<ul>
+				<li>Strict, in which deprecated elements are forbidden,</li>
+				<li>Transitional, in which deprecated elements are allowed,</li>
+				<li>Frameset, in which mostly only frame related elements are allowed.</li>
+			</ul>
+			<p>
+				Since December 1997, when HTML 4 was released, to May 2000 there were another three released that improved the language and respected ISO/IEC international standard. 
+			</p>
+			<p>
+				The last one version of HTML was released in October 2014, that version is the current in use.<br>
+				HTML 5 was upgraded three times, the last one was for HTML 5.2 in December 2017.
+			</p>
+			<p>The first draft version of HTML was made in October 1991, it was called <em>HTML Tags</em> which was an informal CERN document listing 18 HTML tags and it was the first mentioned in public about the language.</p>
+			<p>An important mention is about XHTML; it is a separate language, made in the early 2000, that began as a reformulation of HTML 4.01 using XML 1.0. It is no longer being developed as a separate standard.</p>
+		</article>
+	</section>
+	
+	<section id="markup" class="main-section">
+		<header>Markup</header>
+		<article>
+			<p>
+				HTML markup consists of several key components, including those called <em>tags</em>, character-based on <em>data types</em>, <em>characteer references</em> and <em>entity references</em>. HTML tags most commonly come in pairs like <span class="code">&lt;h1&gt;</span> and <span class="code">&lt;/h1&gt;</span>, although some represent empty elements ans so are unpaired, for example <span class="code">&lt;img&gt;</span>. <br>The first tag in such a pair is the <em>start tag</em> and the second is the <em>end tag</em> (they are also called <em>opening tags</em> and <em>closing tags</em>).
+			</p>
+		</article>
+	</section>
+
+	<section id="block_and_inline_elements" class="main-section">
+		<header>Block and Inline Elements</header>
+		<article>
+			<p>
+				There are two types of elements in HTML
+			</p>
+			<ul>
+				<li>Block Elements,</li>
+				<li>Inline Elements.</li>
+			</ul>
+			<p>
+				To follow some example of block elements
+			</p>
+			<ul>
+				<li>&lt;div&gt;</li>
+				<li>&lt;h1&gt; ... &lt;h6&gt;</li>
+				<li>&lt;hr/&gt;</li>
+				<li>&lt;p&gt;</li>
+				<li>&lt;table&gt;</li>
+				<li>&lt;form&gt;</li>
+			</ul>
+			<p>
+				To follow some example of inline elements
+			</p>
+			<ul>
+				<li>&lt;dl&gt;</li>
+				<li>&lt;li&gt;</li>
+				<li>&lt;ol&gt;</li>
+				<li>&lt;ul&gt;</li>
+			</ul>
+			<p>
+				A <strong>line-level</strong> element remain in line with the rest of the content instead a <strong>block-level</strong> element always starts on a new line and takes up the full width available.
+			</p>
+		</article>
+	</section>
+	
+	<section id="hello_world" class="main-section">
+		<header>Hello World</header>
+		<article>
+			<p>The following is an example of the classic &#147;<span id="helloworld">Hello World Program</span>&#148;:
+			</p>
+			<p class="coding">
+				<span id="doctype">&lt;!DOCTYPE html&gt;</span><br>
+				&lt;html&gt;<br>
+					<span class="tab1"></span>&lt;head&gt;<br>
+						<span class="tab2"></span>&lt;title&gt;This is a title&lt;/title&gt;<br>
+					<span class="tab1"></span>&lt;/head&gt;<br>
+					<span class="tab1"></span>&lt;body&gt;<br>
+						<span class="tab2"></span>&lt;div&gt;<br>
+							<span class="tab3"></span>&lt;p&gt;Hello World!&lt;/p&gt;<br>
+						<span class="tab2"></span>&lt;/div&gt;<br>
+					<span class="tab1"></span>&lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+			</p>
+			<p>
+				The text bewteen
+			</p>	
+			<p class="coding">
+				&lt;html&gt;<br>
+					<span class="tab1"></span>&lt;body&gt;<br>
+					<span class="tab1"></span>&lt;/body&gt;<br>
+				&lt;/html&gt;<br>
+			</p>
+			<p>Describes the web page and what's visible in the page (its content).<br>
+			The markup text
+			</p>
+			<p class="coding">&lt;title&gt;This is a title&lt;/title&gt;<br>
+			</p>
+			<p>Defines the browser page title and</p>
+			<p class="coding">
+				&lt;div&gt;<br>
+			</p>
+			<p>
+				defines a division of the page used for easy styling.
+			</p>
+			<p class="coding">
+				&lt;html&gt;<br>
+			</p>
+			<p>
+				This is Document Type Declaration for HTML5. If a declaration is not included, various browsers will revert to <em>quirks mode</em> for rendering. CSS is a cornerstone technology of the World Wide Web, alongside HTML and Javascript.
+			</p>
+		</article>
+	</section>
+
+	<section id="styling" class="main-section">
+		<header>Styling</header>
+		<article>
+			<p>
+				If you want to make your pages great aestherically, you need to use another languange like CSS.<br>
+				<strong>Cascading Stle Sheets (CSS)</strong> is a style sheet language used for describing the presentation of a document written in markup language like HTML.
+			</p>
+			<p>
+				CSS is designed to enable the separation of presentation and content, includin layout, colors and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separatee .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that the file and its formatting.
+			</p>
+			<p>
+				Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.
+			</p>
+			<p>
+				The name <em>cascading</em> comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
+			</p>
+			<p>
+				The CSS specifications are maintained by the World Wide Web Consortium (W3C). The W3C operates a free CSS validation service for CSS documents.
+			</p>
+		</article>
+	</section>
+	<section id="reference" class="main-section">
+		<header>Reference</header>
+		<p>These informations are drawn on <a href="https://en.wikipedia.org/wiki/HTML#HTML_versions_timeline">Wikipedia</a>. Otherwise you can check more informations on <a href="https://www.w3.org/">W3C</a>.</p>
+	</section>
+</main>
+
+<footer>
+	<p>freeCodeCamp Technical Documentation Page made by <a href="https://gretinha.com"><em>Gretinha</em></a>.</p>
+</footer>
+
+</body>
+</html>

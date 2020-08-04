@@ -1,0 +1,183 @@
+*{
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	font-family: roboto;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+#navbar{
+	width: 20%;
+	float: left;
+	position: fixed;
+}
+
+#navbar > header{
+	padding: 1.5em 2% 0.5em	;
+}
+
+#navbar > ul{
+	width: 80%;
+	padding: 0 10%;
+	line-height: 1.5em;
+}
+
+#navbar > ul > li > a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#navbar > ul > li > a:hover{
+	text-decoration: underline;
+}
+
+#main-doc{
+	width: 80%;
+	float: right;
+	margin: 2em 0;
+}
+
+.main-section{
+	width: 84%;
+	padding: 2.5em 5% 3em;
+	box-shadow: 0 0 1.5em #ccc;
+	margin: 2.5em 3%;
+	border-radius: 1em;
+}
+
+.main-section:first-of-type{
+	margin-top:1.5em;
+}
+
+header{
+	font-size: 1.4em;
+	font-weight: bold;
+	margin: 1em 0;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+article > p{
+	line-height: 1.5em;
+	margin: 0.5em 0;
+}
+
+article > ul{
+	padding: 0;
+	list-style-type: circle;
+	list-style-position: inside;
+	text-align: left;
+	margin: .7em 3%;
+}
+
+ul{
+	line-height: 1.5em;
+}
+
+.code, .coding, #doctype{
+	font-family: monospace;
+	color: green;
+	background-color: #f7f7f7;
+	padding: .4%;
+	border-radius: 0.5em;
+}
+
+.coding{
+	width: 90%;
+	padding: 0.5em 3%;
+	margin: 0.5em 2%;
+}
+
+#helloworld{
+	font-family: monospace;
+	font-size: 1.3em;
+}
+
+.tab1{
+	padding-left: 1em;
+}
+
+.tab2{
+	padding-left: 2em;
+}
+
+
+.tab3{
+	padding-left: 3em;
+}
+
+footer{
+	text-align: center;
+	width: 90%;
+	margin: 1em 5% 2em;
+}
+
+@media only screen and (max-width: 750px){
+	#navbar > header{
+		font-size: 1.3em;
+	}
+
+	.main-section{
+	box-shadow: 0 0 1em #ccc;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	#navbar > header{
+		font-size: 1em;
+	}
+}
+
+@media only screen and (max-width: 550px){
+	#navbar{
+		width: 100%;
+		float: none;
+		height: 7em;
+		background-color: white; 
+	}
+
+	#navbar > header{
+		margin-bottom: 0.5em;
+	}
+
+	#navbar >ul{
+		width: 98%;
+		margin: 0.4em 1%;
+		text-align: center;
+		padding: 0;
+		font-size: .6em;
+	} 
+
+	#navbar > ul > li{
+		width: 13%;
+		padding: 0.2em .5%;
+		display: inline-block;
+
+	}
+
+	#navbar > ul > li:first-of-type{
+		padding-left: 0;
+	}
+
+	#navbar > ul > li:last-of-type{
+		padding-right: 0;
+	}
+
+	.main-section:first-of-type{
+		margin-top:6em;
+	}
+
+	#main-doc{
+		width: 100%;
+		float: none;
+	}
+}
