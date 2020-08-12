@@ -4,6 +4,9 @@
 	margin: 0;
 	background-image: url("Ariana.jpeg");
 	opacity: .97;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 header{
