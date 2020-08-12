@@ -1,0 +1,19 @@
+Objective: Build a CodePen.io app that is functionally similar to this: https://codepen.io/freeCodeCamp/full/zNBOYG.
+
+Fulfill the below user stories and get all of the tests to pass. Give it your own personal style.
+
+You can use HTML, JavaScript, and CSS to complete this project. 
+
+User Stories 
+
+#1x		My portfolio should have a welcome section with an id of welcome-section.
+#2x		The welcome section should have an h1 element that contains text.
+#3x     My portfolio should have a projects section with an id of projects.
+#4x		The projects section should contain at least one element with a class of project-tile to hold a project.
+#5x		The projects section should contain at least one link to a project.
+#6x		My portfolio should have a navbar with an id of navbar.
+#7x		The navbar should contain at least one link that I can click on to navigate to different sections of the page.
+#8x		My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.
+#9x		My portfolio should have at least one media query.
+#10		The height of the welcome section should be equal to the height of the viewport.
+#11x	The navbar should always be at the top of the viewport.

@@ -1,0 +1,255 @@
+*{
+	width: 100%;
+	overflow-x: hidden;
+	margin: 0;
+	font-family: monospace;
+	font-size: 1.05em;
+}
+
+a{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+h1, h2{
+	font-family: 'Playfair Display', serif;
+	text-transform: uppercase;
+}
+
+h1{
+	font-size: 1.5em;
+}
+
+h2{
+	font-size: 1.35em;
+}
+
+#navbar{
+	background-color: #F5F9EC;
+	height: 2.5em;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+/* navbar always on top */
+
+#navbar{
+	position: fixed;
+	top: 0;
+}
+
+#welcome-section{
+	margin-top: 4em !important;
+}
+
+/* ---------- */
+
+/* Border Radius */
+
+#navbar{
+	border-bottom-left-radius: 5em;
+	border-bottom-right-radius: 5em;
+}
+
+#welcome-section{
+	border-top-right-radius: 2.5em;
+	border-top-left-radius: 2.5em;
+}
+
+footer{
+	border-bottom-left-radius: 2.5em;
+	border-bottom-right-radius: 2.5em;
+}
+
+/* ————————————–– */
+
+#navbar > ul{
+	list-style-type: none;
+	width: 100%;
+	text-align: center;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+#navbar > ul > li:first-of-type{
+	margin-left: 5%;
+}
+
+#navbar > ul > li:last-of-type{
+	margin-right: 5%;
+}
+
+#navbar > ul > li{
+	float: left;
+	width: 30%;
+	padding-top: .6em;
+}
+
+#navbar > ul > li > a{
+	color: #3b3942;
+}
+
+#welcome-section{
+	background-color: #e6f1f4;
+	width: 90%;
+	margin: 1em 5%;
+	text-align: center;
+	padding: 2em 0;
+}
+
+#welcome-section > p{
+	color: #666666;
+	width: 90%;
+	padding: .5em 5%;
+}
+
+#welcome-section h1{
+	text-transform: none;
+}
+
+#welcome-section > p:first-of-type{
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	font-size: 1.1em;
+	padding: .7em 0;
+	color: #726973 !important;
+	border-bottom: 1px solid #ccc;
+}
+
+#welcome-section > p:nth-of-type(2){
+	padding-top: .7em;
+}
+
+#projects{
+	background-color: #e7dbea; 
+	width: 90%;
+	margin: 1em 5%;
+	padding: 2em 0;
+	text-align: center;
+}
+
+#projects > .box{
+	width: 30%;
+	float: left;
+	padding-top: 1em;
+}
+
+#projects > .box:first-of-type{
+	margin-left: 5%;
+}
+
+#projects > .box:last-of-type{
+	margin-right: 5%;
+}
+
+.project-tile{
+	text-transform: uppercase;
+	margin: 1em 5%;
+	font-family: 'Playfair Display', serif;
+	font-size: 1.1em;
+	display: block;
+	width: 90%;
+}
+
+#contacts{
+	background-color: #3b3942;
+	width: 90%;
+	margin: 1em 5%;
+	text-align: center;
+	padding: 2em 0;
+}
+
+#contacts h2{
+	margin-bottom: .7em;
+	color: white;
+}
+
+#contacts p{
+	color: white;
+}
+
+#contacts > .social:nth-of-type(2) > a > img{
+	margin-top: 0.8em;
+}
+
+#contacts > p{
+	font-family: monospace;
+	padding-top: 1.5em;
+}
+
+#contacts > p > a{
+	color: white;
+	font-family: monospace;
+}
+
+.social:first-of-type{
+	margin-left: 26%;
+}
+
+.social:last-of-type{
+	margin-right: 26%;
+}
+
+.social{
+	width: 16%;
+	float: left;
+}
+
+.social > a > img{
+	width: 30%;
+}
+
+.social > a:hover > img{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+}
+
+footer{
+	background-color: #ccd;
+	color: white;
+	text-align: center;
+	padding: 1em 0;
+	margin: 1em 5%;
+	width: 90%;
+	font-family: monospace;
+}
+
+@media only screen and (max-width: 1024px){
+	a:hover{
+		text-decoration: none;
+	}
+
+	.social > a:hover > img{
+		transform: none;
+	}
+
+	#contacts > .social:nth-of-type(2) > a > img{
+		margin-top: 0.6em;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	#projects > .box{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	#projects > .box > a{
+		margin: 0 5%;
+	}
+
+	#contacts > .social:nth-of-type(2) > a > img{
+		width: 35%;
+		margin-top: .25em;
+	}
+}
